@@ -1,0 +1,15 @@
+version: "3"
+services:
+   web:
+     image: php:v1
+     ports:
+     - "81:80"
+   mysql:
+     image: db:v1
+     volumes:
+     - db_data:/var/lib/mysql
+     environment:
+        MYSQL_ROOT_PASSWORD: password
+        MYSQL_DATABASE: mydatabase
+volumes:
+   db_data: {}
