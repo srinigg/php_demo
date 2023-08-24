@@ -4,6 +4,8 @@ services:
      image: php:v1
      ports:
      - "81:80"
+     depends_on:
+     -mysql
    mysql:
      image: db:v1
      volumes:
