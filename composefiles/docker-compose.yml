@@ -5,7 +5,7 @@ services:
      ports:
      - "81:80"
      depends_on:
-     -mysql
+     - mysql
    mysql:
      image: db:v1
      volumes:
