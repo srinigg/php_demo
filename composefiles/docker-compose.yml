@@ -11,7 +11,7 @@ services:
      volumes:
      - db_data:/var/lib/mysql
      environment:
-        MYSQL_ROOT_PASSWORD: password
         MYSQL_DATABASE: mydatabase
+        MYSQL_ROOT_PASSWORD: password
 volumes:
    db_data: {}
