@@ -1,13 +1,13 @@
 version: "3"
 services:
    web:
-     image: php:v1
+     image: php:v2
      ports:
      - "81:80"
      depends_on:
      - mysql
    mysql:
-     image: db:v1
+     image: db:v2
      volumes:
      - db_data:/var/lib/mysql
      environment:
