@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Docker Sample App</title>
+<title>Docker Simple Python App</title>
 <?php
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {
